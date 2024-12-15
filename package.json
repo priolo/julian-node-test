@@ -1,0 +1,31 @@
+{
+  "name": "julian-nodes",
+  "version": "1.0.0",
+  "description": "A TypeScript Node.js library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --experimental-vm-modules --inspect-brk ./node_modules/jest/bin/jest.js",
+    "test:watch": "jest --watch",
+    "prepare": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "typexpress": "file://C:/Users/iorio/Documents/typexpress/typexpress"
+  },
+  "devDependencies": {
+	"@tsconfig/node22": "^22.0.0",
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.5",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.2"
+  }
+}
